@@ -37,25 +37,24 @@ return files.find(file => true);
 
 ## ES6 shorthand
 ```js
-// Instead of:
+// Disallow:
 const files = torrent.files;
 
-// Do this
+// Allow
 const { files } = torrent;
 ```
 
 ## Methods of objects passed as arguments cannot be called
 ```js
 
-// Instead of:
-
-var punch = function(player, target) {
-      return player.get('team') === target.get('team') ? target : decrementHP(target);
+// Disallow:
+const result = function(n) {
+  return n.callSomeMethod() + 'some';
 };
 
-// Do this:
-var punch = function(player, target) {
-      return 'red' === 'green' ? target : decrementHP(target);
+// Allow
+const punch = function(callSomeMethod) {
+  return callSomeMethod() + 'some';
 };
 
 ```
