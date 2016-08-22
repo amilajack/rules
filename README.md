@@ -11,12 +11,12 @@ Instead, use [type-detect](https://github.com/chaijs/type-detect)
 import Type from 'type-detect';
 
 // Disallow
-if (tyeof someNumber === 'number) {
+if (typeof someNumber === 'number) {
 
 }
 
 // Allow
-if (Type(someNumber) === 'number)) {
+if (Type(someNumber) === 'number') {
 
 }
 ```
