@@ -1,7 +1,5 @@
 Rules
 =====
-A temporarly list of eslint rules to make:
-
 A list of rules inspired by The Most Adeuqantly Guide
 
 ## Disallow all mutative array/object methods, ex. .push()
