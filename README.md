@@ -1,6 +1,6 @@
 Rules
 =====
-A list of rules inspired by The Most Adeuqantly Guide
+A list of rules inspired by [The Most Adeuqantly Guide](https://github.com/MostlyAdequate/mostly-adequate-guide)
 
 ## Disallow all mutative array/object methods, ex. .push()
 
