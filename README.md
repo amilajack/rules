@@ -11,7 +11,7 @@ Instead, use [type-detect](https://github.com/chaijs/type-detect)
 import Type from 'type-detect';
 
 // Disallow
-if (typeof someNumber === 'number) {
+if (typeof someNumber === 'number') {
 
 }
 
