@@ -5,7 +5,21 @@ A list of rules inspired by [The Most Adeuqantly Guide](https://github.com/Mostl
 ## Disallow all mutative array/object methods, ex. .push()
 
 ## Disallow `typeof`
-Instead, use https://github.com/chaijs/type-detect
+Instead, use [type-detect](https://github.com/chaijs/type-detect)
+
+```js
+import Type from 'type-detect';
+
+// Disallow
+if (tyeof someNumber === 'number) {
+
+}
+
+// Allow
+if (Type(someNumber) === 'number) {
+
+}
+```
 
 ## Disalow checking for nil values/"truthiness"
 Checking for nil values should be abstracted by monads
