@@ -46,14 +46,13 @@ const { files } = torrent;
 
 ## Methods of objects passed as arguments cannot be called
 ```js
-
 // Disallow:
 const result = function(n) {
   return n.callSomeMethod() + 'some';
 };
 
 // Allow
-const punch = function(callSomeMethod) {
+const result = function(callSomeMethod) {
   return callSomeMethod() + 'some';
 };
 
