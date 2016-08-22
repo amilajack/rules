@@ -16,7 +16,7 @@ if (tyeof someNumber === 'number) {
 }
 
 // Allow
-if (Type(someNumber) === 'number) {
+if (Type(someNumber) === 'number)) {
 
 }
 ```
